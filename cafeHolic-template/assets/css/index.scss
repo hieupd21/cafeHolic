@@ -1,0 +1,177 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.bg-darkmaroon {
+    background: #000;
+}
+
+.bg-orange {
+    background-color: #ea8025;
+}
+
+.border-orange {
+    border: 1px solid #ea8025;
+}
+
+.border-t-orange {
+    border-top: 1px solid #ea8025;
+}
+
+.border-b-orange {
+    border-bottom: 1px solid #ea8025;
+}
+
+.font-lg {
+    font-size: 60px;
+}
+
+.text-black {
+    color: black;
+}
+
+.text-orange {
+    color: #ea8025;
+}
+
+.text-orange:hover {
+    color: orangered;
+}
+
+.btn-orange {
+    background-color: #ea8025;
+    color: black;
+    border: 1px solid #ea8025;
+    outline: none;
+}
+
+.btn-orange:hover {
+    background-color: orangered;
+    border: 1px solid orangered;
+    color: black;
+    outline: none;
+}
+
+.btn-orange:focus {
+    background-color: orangered;
+    border: 1px solid orangered;
+    color: black;
+    outline: none;
+}
+
+.btn-outline-orange {
+    background-color: none;
+    border: 1px solid #ea8025;
+    color: #ea8025;
+    outline: none;
+}
+
+.btn-outline-orange:hover {
+    background: orangered;
+    border: orangered;
+    color: black;
+    outline: none;
+}
+
+.text-facebook {
+    color: #ea8025;
+}
+
+.text-facebook:hover {
+    color: #4267b2;
+}
+
+.text-github {
+    color: #ea8025;
+}
+
+.text-github:hover {
+    color: #24292e;
+}
+
+.text-twitter {
+    color: #ea8025;
+}
+
+.text-twitter:hover {
+    color: #1da1f2;
+}
+
+.text-google {
+    color: #ea8025;
+}
+
+.text-google:hover {
+    color: #e34133;
+}
+
+.Topbar {
+    &_row {
+        &_col-3 {
+            &_modal-body {
+                &_product {
+                    &_product_items {
+                        &_img {
+                            width: 30%;
+                            text-align: center;
+
+                            &_pic {
+                                max-width: 100%;
+                                height: 100%;
+                            }
+                        }
+
+                        &_info {
+                            width: 45%;
+                        }
+
+                        &_btn {
+                            width: 15%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.Content {
+    &_row {
+        &_col-12 {
+            &_video {
+                position: relative;
+                width: 100%;
+                height: 100%; 
+            }
+
+            &_content {
+                position: absolute;
+                top: 40%;
+                left: 37%;
+            }
+        }
+    }
+}
+
+.Footer {
+    &_row {
+        &_col-12 {
+            &_ul {
+                &_li {
+                    width: 40px;
+                    height: 40px;
+                    transform: rotate(45deg);
+                    border: 1px solid #ea8025;
+
+                    &_fa {
+                        transform: rotate(-45deg);
+                    }
+                }
+            }
+        }
+    }
+}
