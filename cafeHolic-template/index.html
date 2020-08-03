@@ -27,20 +27,34 @@
                 </a>
             </div>
 
-            <div class="col-4 animate__animated animate__fadeInDown">
+            <div class="col-4 menu-bar animate__animated animate__fadeInDown">
                 <ul class="m-0 p-0 d-flex justify-content-around align-items-center">
                     <li class="list-unstyled">
-                        <a class="text-decoration-none font-italic text-orange" href="">
+                        <a class="text-decoration-none font-italic text-orange" href="#shop" onclick="loadShop()">
                             SHOP
                         </a>
+                        <div class="sub-menu Topbar_row_col-4_ul_li_sub-menu pt-1">
+                            <ul class="m-0 p-0 list-menu">
+                                <li class="list-unstyled my-1">
+                                    <a class="text-decoration-none text-orange font-italic" href="#shop" onclick="loadShop()">
+                                        COFFEE
+                                    </a>
+                                </li>
+                                <li class="list-unstyled my-1">
+                                    <a class="text-decoration-none text-orange font-italic" href="#shop" onclick="loadShop()">
+                                        EQUIPMENT
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </li>
                     <li class="list-unstyled">
-                        <a class="text-decoration-none font-italic text-orange" href="about.html">
+                        <a class="text-decoration-none font-italic text-orange" href="#about" onclick="loadAbout()">
                             ABOUT US
                         </a>
                     </li>
                     <li class="list-unstyled">
-                        <a class="text-decoration-none font-italic text-orange" href="contact.html">
+                        <a class="text-decoration-none font-italic text-orange" href="#contact" onclick="loadContact()">
                             CONTACT
                         </a>
                     </li>
@@ -68,7 +82,7 @@
                             aria-labelledby="exampleModalLabel" aria-hidden="true">
                             <div class="modal-dialog">
                                 <div class="modal-content rounded-0 border-orange bg-darkmaroon">
-                                    <div class="modal-header d-flex justify-content-center font-italic bg-orange border-b-orange">
+                                    <div class="modal-header d-flex justify-content-center font-italic bg-orange border-b-orange rounded-0">
                                         <h5 class="modal-title text-black" id="exampleModalLabel">
                                             MY CART
                                         </h5>
@@ -77,7 +91,7 @@
                                         <div class="product">
                                             <div class="product-items d-flex justify-content-around align-items-center">
                                                 <div class="img Topbar_row_col-3_modal-body_product_product_items_img">
-                                                    <img class="pic Topbar_row_col-3_modal-body_product_product_items_img_pic" src="assets/images/green-logo.png">
+                                                    <img class="pic Topbar_row_col-3_modal-body_product_product_items_img_pic" src="assets/images/roastery.png">
                                                 </div>
                                                 <div class="info Topbar_row_col-3_modal-body_product_product_items_info">
                                                     <h6 class="m-0 font-italic text-orange">cafeHolic</h6>
@@ -90,6 +104,43 @@
                                                 </div>
                                             </div>
                                             <hr class="border-t-orange">
+
+                                            <div class="product-items d-flex justify-content-around align-items-center">
+                                                <div class="img Topbar_row_col-3_modal-body_product_product_items_img">
+                                                    <img class="pic Topbar_row_col-3_modal-body_product_product_items_img_pic" src="assets/images/our-coffee.png">
+                                                </div>
+                                                <div class="info Topbar_row_col-3_modal-body_product_product_items_info">
+                                                    <h6 class="m-0 font-italic text-orange">cafeHolic</h6>
+                                                    <small class="text-light">100000</small>
+                                                </div>
+                                                <div class="btn Topbar_row_col-3_modal-body_product_product_items_btn">
+                                                    <button class="btn btn-outline-orange">
+                                                        <i class="fas fa-trash"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <hr class="border-t-orange">
+
+                                            <div class="product-items d-flex justify-content-around align-items-center">
+                                                <div class="img Topbar_row_col-3_modal-body_product_product_items_img">
+                                                    <img class="pic Topbar_row_col-3_modal-body_product_product_items_img_pic" src="assets/images/login.jpg">
+                                                </div>
+                                                <div class="info Topbar_row_col-3_modal-body_product_product_items_info">
+                                                    <h6 class="m-0 font-italic text-orange">cafeHolic</h6>
+                                                    <small class="text-light">100000</small>
+                                                </div>
+                                                <div class="btn Topbar_row_col-3_modal-body_product_product_items_btn">
+                                                    <button class="btn btn-outline-orange">
+                                                        <i class="fas fa-trash"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                            <hr class="border-t-orange">
+
+                                            <div class="price d-flex justify-content-between">
+                                                <p class="m-0 text-orange font-italic ml-3">TOTAL:</p>
+                                                <p class="m-0 text-light font-italic mr-3">100000</p>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="modal-footer border-t-orange">
@@ -107,7 +158,7 @@
     </div>
 
     <!-- Content -->
-    <div class="container-fluid Content">
+    <div class="container-fluid Content" id="content">
         <div class="row">
             <div class="col-12 p-0">
                 <!-- The video -->
@@ -124,7 +175,7 @@
                         EST.2020
                     </h1>
                     <button
-                        class="btn btn-block btn-lg btn-outline-orange rounded-0 font-italic mt-3 animate__animated animate__fadeInUp">
+                        class="btn btn-block btn-lg btn-outline-orange rounded-0 font-italic mt-3 animate__animated animate__fadeInUp" onclick="loadShop()">
                         SHOP NOW
                     </button>
                 </div>
@@ -229,6 +280,7 @@
     <script src="assets/owlcarousel/docs/assets/vendors/jquery.min.js"></script>
     <script src="assets/owlcarousel/dist/owl.carousel.min.js"></script>
     <script src="assets/js/carousel.js"></script>
+    <script src="assets/js/ajax.js"></script>
 
 </body>
 

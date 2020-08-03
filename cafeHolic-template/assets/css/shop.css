@@ -1,0 +1,126 @@
+* {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.bg-darkmaroon {
+  background: #000;
+}
+
+.bg-orange {
+  background-color: #ea8025;
+}
+
+.border-orange {
+  border: 1px solid #ea8025;
+}
+
+.border-t-orange {
+  border-top: 1px solid #ea8025;
+}
+
+.border-b-orange {
+  border-bottom: 1px solid #ea8025;
+}
+
+.font-lg {
+  font-size: 60px;
+}
+
+.text-black {
+  color: black;
+}
+
+.text-orange {
+  color: #ea8025;
+}
+
+.text-orange:hover {
+  color: orangered;
+}
+
+.btn-orange {
+  background-color: #ea8025;
+  color: black;
+  border: 1px solid #ea8025;
+  outline: none;
+}
+
+.btn-orange:hover {
+  background-color: orangered;
+  border: 1px solid orangered;
+  color: black;
+  outline: none;
+}
+
+.btn-orange:focus {
+  background-color: orangered;
+  border: 1px solid orangered;
+  color: black;
+  outline: none;
+}
+
+.btn-outline-orange {
+  background-color: none;
+  border: 1px solid #ea8025;
+  color: #ea8025;
+  outline: none;
+}
+
+.btn-outline-orange:hover {
+  background: orangered;
+  border: 1px solid orangered;
+  color: black;
+  outline: none;
+}
+
+.Products_row_col-12_img {
+  width: 100%;
+  height: 350px;
+  background-image: url("/cafeHolic-template/assets/images/shop.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.Products_row_col-4_badge {
+  width: 80px;
+  height: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-radius: 50%;
+  background-color: #dc3545;
+  position: absolute;
+  right: 5%;
+  top: -15%;
+}
+
+.Products_row_col-4_product-top_img {
+  max-width: 100%;
+  height: 250px;
+}
+
+.Products_row_col-4_product-top_overlay {
+  opacity: 0;
+  position: absolute;
+  bottom: 30%;
+}
+
+.product-top:hover .overlay {
+  opacity: 1;
+  margin-left: 15%;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+/*# sourceMappingURL=shop.css.map */
