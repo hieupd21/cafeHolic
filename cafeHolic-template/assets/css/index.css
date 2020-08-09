@@ -44,8 +44,7 @@
 }
 
 .btn-orange {
-  background: -webkit-gradient(linear, right top, left top, from(orangered), to(#fa8016));
-  background: linear-gradient(to left, orangered, #fa8016);
+  background: #fa8016;
   color: black;
   border: 1px solid #ea8025;
   outline: none;
@@ -73,9 +72,8 @@
 }
 
 .btn-outline-orange:hover {
-  background: -webkit-gradient(linear, right top, left top, from(orangered), to(#fa8016));
-  background: linear-gradient(to left, orangered, #fa8016);
-  border: 1px solid orangered;
+  background: #fa8016;
+  border: 1px solid #fa8016;
   color: black;
   outline: none;
 }
@@ -123,7 +121,7 @@
 
 .Topbar_row_col-3_modal-body_product_product_items_img_pic {
   max-width: 100%;
-  height: auto;
+  height: 120px;
 }
 
 .Topbar_row_col-3_modal-body_product_product_items_info {
