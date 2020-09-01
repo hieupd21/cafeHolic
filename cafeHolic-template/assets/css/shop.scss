@@ -6,6 +6,10 @@
     cursor: pointer;
 }
 
+.bg-cream {
+    background-color: #6f593e;
+}
+
 .bg-darkmaroon {
     background: #000;
 }
@@ -88,7 +92,7 @@
                 background-size: cover;
             }
         }
-        
+
         &_col-4 {
             &_badge {
                 width: 80px;
@@ -98,9 +102,8 @@
                 align-items: center;
                 flex-wrap: wrap;
                 border-radius: 50%;
-                background-color: #dc3545;
                 position: absolute;
-                right: 5%;
+                right: 0;
                 top: -15%;
             }
 
@@ -116,12 +119,48 @@
                     bottom: 30%;
                 }
             }
+
+            &_product-top:hover .overlay {
+                opacity: 1;
+                margin-bottom: 10%;
+                transition: .5s;
+            }
         }
     }
 }
 
-.product-top:hover .overlay {
-    opacity: 1;
-    margin-left: 15%;
-    transition: 0.5s;
+.Categories {
+    &_row {
+        &_col-4 {
+            &_col-12 {
+                height: 100px;
+                width: 100%;
+                background-image: url('/cafeHolic-template/assets/images/background-search.png');
+                background-color: #ea8025;
+            }
+
+            &_col-12 {
+                &_input {
+                    width: 100%;
+                    color: #ea8025;
+                }
+
+                &_text {
+                    width: 50px;
+                    height: 50px;
+                    background-color: #ea8025;
+                    line-height: 45px;
+                    transform: translateX(-50%) rotate(45deg);
+                    border: 3px solid white;
+                    border-top-left-radius: 50%;
+                    border-top-right-radius: 50%;
+                    border-bottom-left-radius: 50%;
+                }
+
+                &_p {
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
 }

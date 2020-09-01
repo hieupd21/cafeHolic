@@ -6,6 +6,10 @@
   cursor: pointer;
 }
 
+.bg-cream {
+  background-color: #6f593e;
+}
+
 .bg-darkmaroon {
   background: #000;
 }
@@ -100,9 +104,8 @@
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   border-radius: 50%;
-  background-color: #dc3545;
   position: absolute;
-  right: 5%;
+  right: 0;
   top: -15%;
 }
 
@@ -117,10 +120,40 @@
   bottom: 30%;
 }
 
-.product-top:hover .overlay {
+.Products_row_col-4_product-top:hover .overlay {
   opacity: 1;
-  margin-left: 15%;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
+  margin-bottom: 10%;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.Categories_row_col-4_col-12 {
+  height: 100px;
+  width: 100%;
+  background-image: url("/cafeHolic-template/assets/images/background-search.png");
+  background-color: #ea8025;
+}
+
+.Categories_row_col-4_col-12_input {
+  width: 100%;
+  color: #ea8025;
+}
+
+.Categories_row_col-4_col-12_text {
+  width: 50px;
+  height: 50px;
+  background-color: #ea8025;
+  line-height: 45px;
+  -webkit-transform: translateX(-50%) rotate(45deg);
+          transform: translateX(-50%) rotate(45deg);
+  border: 3px solid white;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  border-bottom-left-radius: 50%;
+}
+
+.Categories_row_col-4_col-12_p {
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 /*# sourceMappingURL=shop.css.map */

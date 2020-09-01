@@ -6,6 +6,18 @@
     cursor: pointer;
 }
 
+.bg-none {
+    background-color: #181a1b;
+    outline: none;
+    border: none;
+}
+
+.bg-none:focus {
+    background-color: #181a1b;
+    outline: none;
+    border: none;
+}
+
 .bg-darkmaroon {
     background: #000;
 }
@@ -28,6 +40,10 @@
 
 .font-lg {
     font-size: 60px;
+}
+
+.font-sm {
+    font-size: 14px;
 }
 
 .text-black {
