@@ -1,0 +1,166 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.bg-cream {
+    background-color: #6f593e;
+}
+
+.bg-darkmaroon {
+    background: #000;
+}
+
+.bg-orange {
+    background-color: #ea8025;
+}
+
+.border-orange {
+    border: 1px solid #ea8025;
+}
+
+.border-t-orange {
+    border-top: 1px solid #ea8025;
+}
+
+.border-b-orange {
+    border-bottom: 1px solid #ea8025;
+}
+
+.font-lg {
+    font-size: 60px;
+}
+
+.text-black {
+    color: black;
+}
+
+.text-orange {
+    color: #ea8025;
+}
+
+.text-orange:hover {
+    color: orangered;
+}
+
+.btn-orange {
+    background-color: #ea8025;
+    color: black;
+    border: 1px solid #ea8025;
+    outline: none;
+}
+
+.btn-orange:hover {
+    background-color: orangered;
+    border: 1px solid orangered;
+    color: black;
+    outline: none;
+}
+
+.btn-orange:focus {
+    background-color: orangered;
+    border: 1px solid orangered;
+    color: black;
+    outline: none;
+}
+
+.btn-outline-orange {
+    background-color: none;
+    border: 1px solid #ea8025;
+    color: #ea8025;
+    outline: none;
+}
+
+.btn-outline-orange:hover {
+    background: orangered;
+    border: 1px solid orangered;
+    color: black;
+    outline: none;
+}
+
+.Products {
+    &_row {
+        &_col-12 {
+            &_img {
+                width: 100%;
+                height: 350px;
+                background-image: url('/cafeHolic-template/assets/images/shop.png');
+                background-position: center;
+                background-size: cover;
+            }
+        }
+
+        &_col-4 {
+            &_badge {
+                width: 80px;
+                height: 80px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                border-radius: 50%;
+                position: absolute;
+                right: 0;
+                top: -15%;
+            }
+
+            &_product-top {
+                &_img {
+                    max-width: 100%;
+                    height: 250px;
+                }
+
+                &_overlay {
+                    opacity: 0;
+                    position: absolute;
+                    bottom: 30%;
+                }
+            }
+
+            &_product-top:hover .overlay {
+                opacity: 1;
+                margin-bottom: 10%;
+                transition: .5s;
+            }
+        }
+    }
+}
+
+.Categories {
+    &_row {
+        &_col-4 {
+            &_col-12 {
+                height: 100px;
+                width: 100%;
+                background-image: url('/cafeHolic-template/assets/images/background-search.png');
+                background-color: #ea8025;
+            }
+
+            &_col-12 {
+                &_input {
+                    width: 100%;
+                    color: #ea8025;
+                }
+
+                &_text {
+                    width: 50px;
+                    height: 50px;
+                    background-color: #ea8025;
+                    line-height: 45px;
+                    transform: translateX(-50%) rotate(45deg);
+                    border: 3px solid white;
+                    border-top-left-radius: 50%;
+                    border-top-right-radius: 50%;
+                    border-bottom-left-radius: 50%;
+                }
+
+                &_p {
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+}

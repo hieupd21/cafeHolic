@@ -1,0 +1,74 @@
+* {
+    font-family: 'Bai Jamjuree', Poppins;
+}
+
+td {
+    word-break: break-all;
+}
+
+.font-small {
+    font-size: 15px;
+}
+
+.text-hover {
+    color: #8888b3;
+}
+
+.text-hover:hover {
+    color: #4d4dbe;
+}
+
+.btn-best {
+    background-color: #d7d7db;
+    color: black;
+}
+
+.btn-best:hover {
+    transition: .5s;
+    background-color: #8888b3;
+    color: black;
+}
+
+.bg-hover {
+    background-color: #d7d7db;
+}
+
+.bg-hover:hover {
+    transition: .5s;
+    background-color: #8888b3;
+}
+
+.bg-dark-blue {
+    background-color: #2f323e;
+}
+
+.bg-best {
+    background-color: #edf1f5;
+}
+
+.cursor {
+    cursor: pointer;
+}
+
+.Main {
+    &_row {
+        &_col-3 {
+            &_CateNav {
+                &_a {
+                    &_i {
+                        width: 15%;
+                    }
+
+                    &_p {
+                        width: 85%;
+                    }
+                }
+
+                &_a:hover {
+                    border-left: 3px solid orangered;
+                    background-color: #d7d7db;
+                }
+            }
+        }
+    }
+}

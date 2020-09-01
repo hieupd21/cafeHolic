@@ -1,0 +1,67 @@
+* {
+  font-family: 'Bai Jamjuree', Poppins;
+}
+
+td {
+  word-break: break-all;
+}
+
+.font-small {
+  font-size: 15px;
+}
+
+.text-hover {
+  color: #8888b3;
+}
+
+.text-hover:hover {
+  color: #4d4dbe;
+}
+
+.btn-best {
+  background-color: #d7d7db;
+  color: black;
+}
+
+.btn-best:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: #8888b3;
+  color: black;
+}
+
+.bg-hover {
+  background-color: #d7d7db;
+}
+
+.bg-hover:hover {
+  -webkit-transition: .5s;
+  transition: .5s;
+  background-color: #8888b3;
+}
+
+.bg-dark-blue {
+  background-color: #2f323e;
+}
+
+.bg-best {
+  background-color: #edf1f5;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.Main_row_col-3_CateNav_a_i {
+  width: 15%;
+}
+
+.Main_row_col-3_CateNav_a_p {
+  width: 85%;
+}
+
+.Main_row_col-3_CateNav_a:hover {
+  border-left: 3px solid orangered;
+  background-color: #d7d7db;
+}
+/*# sourceMappingURL=style.css.map */
