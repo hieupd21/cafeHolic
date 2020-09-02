@@ -117,9 +117,9 @@
                         <button class="btn btn-outline-orange my-2 rounded-0">
                             <i class="fas fa-heart"></i>
                         </button>
-                        <button class="btn btn-outline-orange my-2 rounded-0">
+                        <a class="btn btn-outline-orange my-2 rounded-0" href="{{route('cart.add', $item->prod_id)}}">
                             <i class="fas fa-shopping-bag"></i>
-                        </button>
+                        </a>
                     </div>
                 </div>
                 <div class="product-bottom text-center mt-4">
@@ -140,14 +140,14 @@
 
             @foreach ($prod_new as $item)
             <div class="col-md-4 my-5 Products_row_col-4 animate__animated animate__fadeInUp">
-                <div class="badge Products_row_col-4_badge d-flex flex-column align-items-center bg-success">
+                {{-- <div class="badge Products_row_col-4_badge d-flex flex-column align-items-center bg-success">
                     <small class="font-italic text-black d-flex flex-wrap text-white">RELEASES</small>
-                </div>
+                </div> --}}
                 <div class="product-top Products_row_col-4_product-top text-center">
                     <img class="img Products_row_col-4_product-top_img" src="backend/img/{{$item->prod_image}}">
                     <div
                         class="overlay Products_row_col-4_product-top_overlay d-flex flex-column justify-content-center">
-                        <a class="btn btn-outline-orange my-2 rounded-0" href="#detail">
+                        <a class="btn btn-outline-orange my-2 rounded-0" href="{{route('home.detail', $item->prod_id)}}">
                             <i class="fas fa-eye"></i>
                         </a>
                         <button class="btn btn-outline-orange my-2 rounded-0">
@@ -159,7 +159,7 @@
                     </div>
                 </div>
                 <div class="product-bottom text-center mt-4">
-                    <a class="text-decoration-none" href="#detail">
+                    <a class="text-decoration-none" href="{{route('home.detail', $item->prod_id)}}">
                         <h6 class="m-0 text-orange font-italic">{{$item->prod_name}}</h6>
                     </a>
                     <p class="m-0 text-secondary font-italic">$&nbsp{{number_format($item->prod_price,2)}}</p>

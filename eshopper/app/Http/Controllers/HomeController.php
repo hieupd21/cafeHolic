@@ -18,10 +18,14 @@ class HomeController extends Controller
         return view('frontend.index', compact('prod_feat', 'prod_new', 'categories', 'product'));
     }
 
+    public function about() {
+        return view('frontend.about');
+    }
+
     public function detail($id) {
         $product = Product::find($id);
         $comments = Comment::where('cmt_prod', $id)->get();
-        $prod_rela = Product::where('prod_featured', 'yes')->orderByDesc('prod_id')->take(3)->get();
+        $prod_rela = Product::where('prod_cate','=',$product->prod_cate)->take(3)->get();
 
         return view('frontend.detail', compact('product', 'prod_rela', 'comments'));
     }
@@ -55,5 +59,9 @@ class HomeController extends Controller
         $count = Product::where('prod_name','like','%'.$result.'%')->count();
 
         return view('frontend.search', compact('products', 'categories', 'keyword', 'count'));
+    }
+
+    public function checkout() {
+        return view('frontend.checkout');
     }
 }

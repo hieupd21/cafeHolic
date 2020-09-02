@@ -16,7 +16,7 @@
 
 <div class="container Categories">
     <div class="row">
-        <div class="col-4">
+        <div class="col-3">
             <div class="col-12 Categories_row_col-4_col-12 d-flex align-items-center justify-content-center animate__animated animate__fadeInDown"
                 style="background-image: url('frontend/images/background-search.png');">
                 <div class="search">
@@ -68,7 +68,7 @@
             </div>
         </div>
 
-        <div class="col-8 d-flex flex-wrap">
+        <div class="col-9 d-flex flex-wrap">
 
             <div class="col-md-12 mt-3 animate__animated animate__fadeInDown">
                 <div class="title">

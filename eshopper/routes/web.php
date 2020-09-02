@@ -12,10 +12,19 @@
 */
 
 Route::get('/', 'HomeController@index')->name('home');
+Route::get('/about', 'HomeController@about')->name('home.about');
 Route::get('/detail/{id}', 'HomeController@detail')->name('home.detail');
 Route::post('/detail/{id}', 'HomeController@comment')->name('home.comment');
 Route::get('/category/{id}/{name}', 'HomeController@category')->name('home.category');
 Route::get('/search', 'HomeController@search')->name('home.search');
+
+Route::group(['prefix' => 'cart'], function () {
+    Route::get('/add/{id}', 'CartController@addCart')->name('cart.add');
+    Route::get('/', 'CartController@showCart')->name('cart.show');
+    Route::get('/{id}', 'CartController@deleteCart')->name('cart.delete');
+});
+
+Route::get('/checkout', 'HomeController@checkout')->name('home.checkout');
 
 Route::group(['namespace' => 'Admin'], function () {
     Route::group(['prefix' => 'login', 'middleware' => 'CheckLogedIn'], function () {

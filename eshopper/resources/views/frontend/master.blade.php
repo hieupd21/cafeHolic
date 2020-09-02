@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="frontend/css/index.css">
     <link rel="stylesheet" href="frontend/css/shop.css">
     <link rel="stylesheet" href="frontend/css/detail.css">
+    <link rel="stylesheet" href="frontend/css/cart.css">
+    <link rel="stylesheet" href="frontend/css/about.css">
+    <link rel="stylesheet" href="frontend/css/checkout.css">
     <link rel="shortcut icon" href="backend/img/avatar.jpg" type="image/x-icon">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,800;1,800&display=swap">

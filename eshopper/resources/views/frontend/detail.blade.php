@@ -12,9 +12,9 @@
                 <h2 class="price text-secondary font-italic">$&nbsp{{number_format($product->prod_price, 2)}}</h2>
                 <input type="number" value="1" step="1" min="1" max="" size="5"
                     class="text-orange text-center bg-none p-2 font-italic">
-                <button class="btn btn-outline-orange py-2 rounded-0 font-italic ml-3">
+                <a class="btn btn-outline-orange py-2 rounded-0 font-italic ml-3" href="{{route('cart.add', $product->prod_id)}}">
                     ADD TO CART
-                </button>
+                </a>
                 <p class="description text-danger">
                     {!! $product->prod_description !!}
                 </p>
