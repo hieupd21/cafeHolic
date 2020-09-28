@@ -23,11 +23,6 @@
                     <form action="{{route('home.search')}}" method="get">
                         <div class="input-group">
                             <input type="text" class="form-control rounded-0" name="result" placeholder="Search ...">
-                            <div class="input-group-append">
-                                <button class="btn btn-outline-dark rounded-0" type="button">
-                                    <i class="fas fa-search"></i>
-                                </button>
-                            </div>
                         </div>
                     </form>
                 </div>
